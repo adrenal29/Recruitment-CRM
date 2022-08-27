@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dashboard.css">
+    <script src="https://kit.fontawesome.com/ad8d880fa2.js" crossorigin="anonymous"></script>
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="main">
+            <img src="./images/i1.png" alt=""  class="i1">
+            <img src="./images/i2.png" alt=""  class="i2">
+            <img src="./images/i3.png" alt=""  class="i3">
+            <img src="./images/i4.png" alt=""  class="i4">
+            <img src="./images/search.png" alt="" class="search" onclick="change()">
+            <input type="text" placeholder="Enter Github name/Job drive" class="search-input" >
+        <div class="sidebar">
+            <img src="./images/dark mode.png" alt="" >
+            <ul>
+                <li><h3><a  onclick="viewDash()">Dashboard</a></h3></li>
+                <li><h3><a href="">Candidate</a></h3></li>
+                <li><h3><a href="">Vacancies</a></h3></li>
+                <li><h3><a href="">Interview</a></h3></li>
+            </ul>
+        </div>
+        <div class="options">
+            <h2>Dashboard</h2>
+            <div class="panel1" id="ch">
+                <div class="jobs">
+                    <h2>Active Jobs</h2>
+                    <hr>
+                </div>
+                <div class="new">
+                    <h2>New Applications</h2>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <div class="details"></div>
+    </div>
+</body>
+<script>
+    
+    function change(){
+        var jobs=document.getElementById("ch");
+        jobs.className="git"
+    }
+    function viewDash(){
+        var jobs=document.getElementById("ch");
+        jobs.className="panel1"
+    }
+</script>
+</html>

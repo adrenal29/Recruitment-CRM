@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+a{
+    text-decoration: none;
+    color: rgb(155, 155, 155);
+}
+.main{
+    display: flex;
+}
+.sidebar{
+    width: 20vw;
+    height: 70vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.options{
+    width: 60vw;
+    background: rgba(240, 240, 240, 0.644);
+    height: 100vh;
+}
+.sidebar img{
+    position: absolute;
+    width: 8rem;
+    top: 2rem ;
+    left: 2rem;
+}
+.sidebar ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 8rem 3rem;
+    list-style: none;
+}
+.sidebar ul li{
+    margin: 1.3rem 0rem;
+}
+.sidebar ul li a{
+    font-size: 1rem;
+}
+.sidebar ul li a:hover{
+    color: black;
+}
+.i1,.i2,.i3,.i4{
+    position:absolute;
+}
+.i3{
+    top: 35vh;
+    left:1rem;
+}
+.i1{
+    top:24vh;
+    left: 1rem;
+}
+.i2{
+    top: 45.5vh;
+    left: 1.3rem;
+}
+.i4{
+    top: 56.5vh;
+    left: 1rem;
+}.options h2{
+    margin: 3rem 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.search{
+    position: absolute;
+    top: 6rem;
+    left: 21.5vw;
+}
+.search-input{
+    position: absolute;
+    height: 2rem;
+    width: 25rem;
+    top:6rem ;
+    left: 22rem;
+    border: 0.5px solid rgba(240, 240, 240, 0.479);
+    background: rgba(240, 240, 240, 0.644);
+    padding: 0.2rem;
+    padding-left: 0.5rem;
+    border-radius: 20px;
+    color: rgb(155, 155, 155);
+    outline: none;
+}
+.panel1{
+    display: flex;
+    margin-top: 5rem; 
+}
+.jobs{
+background: white;
+width: 60%;
+height: 50vh;
+margin-left: 2rem;
+border-radius: 15px;
+}
+.jobs h2{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+.new{
+    background: white;
+    height: 50vh;
+    width: 30%;
+    border-radius: 10px;
+    margin-left: 1rem;
+}
+.new h2{
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    padding: 0.2rem -0.6rem;
+}
+.jobs hr, .new hr{
+    border:0.002rem solid rgb(243, 242, 242);
+    margin-top: -2rem;
+}
+.git{
+    display: none;
+}

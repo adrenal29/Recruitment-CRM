@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family:Nunito Sans;
+    ;
+}
+.main{
+display: flex;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin:-4rem 8rem;
+}
+.form-part{
+    width: 80vw;
+}
+.form-part h1{
+    margin: 6rem 8rem;
+}
+form input{
+    height: 2rem;
+    width:17rem;
+    margin: 1rem 0rem;
+    border-radius:5px ;
+    outline: none;
+    border:0.2px solid rgb(163, 156, 156);
+    padding: 0.4rem;
+}
+form h2{
+    font-size: 1rem;
+}
+form button{
+    height: 2.5rem;
+    width: 18rem;
+    border: none;
+    margin-top:2rem;
+    font-size: 1.1rem;
+    background: #3b6df5;
+    color: white;
+    cursor: pointer;
+}
+.ui{
+    background: rgb(240, 239, 239);
+    height: 100vh;
+    width: 100%;
+}
+.ui img{
+    position:fixed;
+    top:42vh;
+    left: 62vw;
+}

@@ -17,6 +17,9 @@ app.get('/builder',(req,res)=>{
 app.get('/recruit',(req,res)=>{
   res.sendFile(__dirname+"/views/recruit.html");
 })
+app.get('/login',(req,res)=>{
+  res.sendFile(__dirname+"/views/login.html");
+})
 app.listen('4000',()=>{
     console.log("server is listening on port 4000");
 })
@@ -48,16 +51,25 @@ request(options, function (error, response) {
 });
 })
 
-app.get('/info',(req,res)=>{
+app.post('/dashboard',(req,res)=>{
+  res.sendFile(__dirname+"/views/dashboard.html");
   var options = {
     'method': 'POST',
     'url': 'https://local-1-29sharma.harperdbcloud.com',
     'headers': {
       'Content-Type': 'application/json',
-      'Authorization': "Basic " + Buffer.from('mohit'+ ':' + 'mohit29#').toString('base64')
+      'Authorization':  "Basic " + Buffer.from('mohit'+ ':' + 'mohit29#').toString('base64')
     },
     body: JSON.stringify({
-      "operation": "user_info"
+      "operation": "insert",
+      "schema": "users",
+      "table": "recruiter",
+      "records": [
+          {   
+              "email":req.body.username,
+              "password":req.body.pwd
+          }
+      ]
   })
   
   };
