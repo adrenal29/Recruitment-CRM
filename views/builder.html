@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./grape.css">
+    <link rel="stylesheet" href="./builder.css">
+    <script src="./grapes.js"></script>
+    <link rel="stylesheet" href="./grape/grapesjs-preset-webpage.min.css">
+    <script src="./grape/grapesjs-preset-webpage.min.js"></script>
+    <title>ReFix Recruit</title>
+</head>
+<body>
+    <div id="editor">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+</body>
+<script>
+    let data = sessionStorage.getItem('user');
+    console.log(data);
+    if(data==null){
+    const editor=grapesjs.init({
+        container:"#editor",
+        fromElement:true,
+        width:"auto",
+        StorageManager:false,
+        plugins:["gjs-preset-webpage"],
+        pluginsOpts:{
+            "gjs-preset-webpage":{},
+        }
+    })
+}
+</script>
+</html>

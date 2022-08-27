@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family:Nunito Sans;
+    ;
+}
+.logo h2{
+    font-size: 2rem;
+    padding-left: 4rem;
+}
+nav{
+    display: flex;
+    margin: 1.5rem 3rem;
+    
+}
+ul{
+    list-style: none;
+    display: flex;
+    margin-left: 5vw;
+    margin-top: 0.3rem;
+}
+li{
+margin:0rem 1.3rem ;
+padding: 0.5rem 0rem;
+cursor: pointer;
+font-weight: 600;
+}
+ul button{
+   width: 9rem;
+   height: 2.5rem;
+   margin-left: 25rem;
+   border: none;
+   background: #3b6df5;
+   border-radius: 20px;
+   color: white;
+   font-size: 1rem;
+   /* font-family:Arial, Helvetica, sans-serif; */
+   cursor: pointer;
+}
+.hero-section{
+    margin-left: 33vw;
+    margin-top: 15vh;
+    font-family: Montserrat;
+    font-size: 1.5rem;
+}
+.l2{
+    padding-left: 3rem;
+    margin-top: -1rem;
+}
+.hero-section p{
+    width: 60vw;
+    text-align: center;
+    margin-left: -10rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+.sb-btn{
+    height: 3rem;
+    width: 15rem;
+    border: none;
+    margin-top:2rem;
+    margin-left: 42.5vw;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    background: #3b6df5;
+    color: white;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px gainsboro;
+}
+.arrow{
+    position: absolute;
+    left:65vw;
+    top:65vh;
+    height: 9rem;
+}
+.slack{
+    position: absolute;
+    left: 7vw;
+    top:20vh;
+    width: 15vw;
+}
+.msg{
+    position: absolute;
+    left: 7vw;
+    top: 50vh;
+    width: 15vw;
+}
+.slack2{
+    position: absolute;
+    left: 80vw;
+    top:30vh;
+    width: 15vw; 
+    transform: rotate(30deg);
+}
+.crm{
+    height: 80vh;
+    background: rgba(245, 245, 245, 0.747);
+    margin-top: 17rem;
+     
+}
+.crm h3{
+    padding-top: 23rem;
+    padding-left: 3rem;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-family:'Times New Roman', Times, serif;
+}
+.crm-img{
+    position: absolute;
+    left: 17rem;
+    height: 30rem;
+    width: 60vw;
+    top:85vh;
+    box-shadow: 3px 3px 3px 3px rgba(240, 239, 239, 0.884);
+    border-radius: 20px;
+}
+.features{
+    margin:2rem 4rem;
+}
+.features h1{
+    margin-left: 3rem;
+    margin-top: 4rem;
+    line-height: 3rem;
+    font-size: 2.3rem ;
+}
+.feature1{
+    display: flex;
+    justify-content: space-between;
+}
+.feature1 .content{
+    padding:0rem 5rem;
+}
+.content h1{
+    font-size: 1.5rem;
+}
+.content p{
+    padding-left: 3rem;
+    font-size: 1.2rem;
+    width: 25rem;
+    text-align: left;
+    line-height: 2rem;
+    color: rgba(139, 137, 137, 0.952);
+}
+.feature1 img{
+    padding-left: 1rem;
+}
+.feature-arrow{
+    position: absolute;
+    left:36vw; 
+    top:82rem;
+    height: 8rem;
+}
+.content button{
+    height: 2rem;
+    width: 8rem;
+    border: none;
+    margin-top:1rem;
+    margin-left: 2.5rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    background: #3b6df5;
+    color: white;
+    cursor: pointer;
+    
+}
+.metrics{
+margin-top:5rem ;
+display: flex;
+justify-content: space-around;
+}
+.one,.two{
+padding-top: 8rem;
+}
+.metrics h4{
+    width: 12rem;
+    margin-top: 1rem;
+    line-height: 1.5rem;
+    color:rgba(139, 137, 137, 0.952);
+}
+.three img{
+    height: 40vh;
+}
+.subscribe{
+    margin-top: 3rem;
+}
+.subscribe img{
+margin-left: 30vw;
+height: 50vh;
+}
+.subscribe h1{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+    line-height: 2.5rem;
+}
+.subscribe button{
+    height: 2.5rem;
+    width: 15rem;
+    border: none;
+    margin-top:1.5rem;
+    margin-left: 2.5rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    background: #3b6df5;
+    color: white;
+    cursor: pointer;
+    margin-left: 41vw;
+}
+footer{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+hr{
+    margin-top: 2rem;
+    border: 0.5px solid whitesmoke;
+}
+.f1,.f2{
+    padding: 1rem 6rem;
+    color:rgba(139, 137, 137, 0.952);
+    line-height: 2rem;
+}

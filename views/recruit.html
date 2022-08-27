@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./recruit.css" />
+    <title>Recruitment Form</title>
+  </head>
+  <body>
+    <form action="/addit" method="post">
+      <h2>Apply Now</h2>
+      <ul>
+        <li>
+            <label for="email">Email Address</label>
+            <br>
+            <input type="text" name="email" id="">
+        </li>
+        <li>
+            <label for="name">Full Name</label>
+            <br>
+            <input type="text" name="name" id="fname" placeholder="First Name">
+            <input type="text" name="name" id="lname" placeholder="Last Name">
+        </li>
+        <li>
+            <label for="phone">Phone Number</label>
+            <br>
+            <input type="number" name="phone" id="">
+        </li>
+        <li>
+            <label for="address">Address</label>
+            <br>
+            <input type="text" name="address" id="" placeholder="Street Address">
+            <input type="text" name="address" id="address2" placeholder="">
+        </li>
+        <li>
+            <input type="text" name="city" id="city" placeholder="City">
+            <input type="text" name="state" id="state" placeholder="State">
+            <input type="text" name="zip" id="zip" placeholder="ZIP">
+        </li>
+        <li>
+            <label for="github">Github</label>
+            <br>
+            <input type="text" name="github" id="">
+        </li>
+        <li>
+            <label for="linkedin">LinkedIn</label>
+            <br>
+            <input type="text" name="linkedin" id="">
+        </li>
+      </ul>
+      <button>SUBMIT</button>
+      </form>
+      <button class="share-btn">Share this opportunity in your network</button>
+  </body>
+</html>

@@ -5,7 +5,7 @@
 body{
     font-family:serif;
 }
-.form{
+form{
     display: flex;
     flex-direction: column;
     border: 0.01px solid black;
@@ -13,13 +13,13 @@ body{
     padding: 1rem;
     margin:28vh 30vw;
 }
-.form label{
+form label{
     margin: 0.5rem 0rem;
 }
-.form input{
+form input{
     height:1.5rem;
 }
-.form input:{
+form input:{
     border:none;
 }
 button{
@@ -34,7 +34,7 @@ button{
     cursor:pointer;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
-.form h2{
+form h2{
 margin-bottom: 0.5rem;
 margin-left: 35%;
 font-size: 2rem;

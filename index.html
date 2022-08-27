@@ -1,28 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
-</head>
-<body>
-   <div class="form">
-    <h2>Login Now</h2>
-    <label for="username">Enter Username</label>
-    <input type="text" id="username">
-    <label for="pwd">Enter Password</label>
-    <input type="password" id="pwd">
-    <button onclick="login()"><b>SUBMIT</b></button>
-   </div>
-</body>
-<script>
-    function login(){
-        alert("sent");
-var request = require('request');
-
-    }
-</script>
-
+  </head>
+  <body>
+    <form action="/add" method="post">
+      <h2>Login Now</h2>
+      <label for="username">Enter Username</label>
+      <input type="text" id="username" name="username" />
+      <label for="pwd">Enter Password</label>
+      <input type="password" id="pwd" name="pwd" />
+      <button >SUBMIT</button>
+    </form>
+  </body>
+  <script>
+    
+  </script>
 </html>
