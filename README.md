@@ -1,6 +1,6 @@
 # RecruitIt
 RecruiIt is a CRM for hiring managers to make developers search easy by integrating github and linkedin search ,interview scheduling and video platform for interview as a service thus increasing hiring manager's productivity ann efficiency.
-# Features of the platform
+## Features of the platform
 :+1:Github search for sourcing developers
 
 :+1:Single click Job posting to multiple platforms and tracking
