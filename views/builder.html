@@ -19,7 +19,6 @@
 <script>
     let data = sessionStorage.getItem('user');
     console.log(data);
-    if(data==null){
     const editor=grapesjs.init({
         container:"#editor",
         fromElement:true,
@@ -30,6 +29,6 @@
             "gjs-preset-webpage":{},
         }
     })
-}
+
 </script>
 </html>

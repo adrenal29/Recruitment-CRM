@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./slider.css">
+    <title>Document</title>
+</head>
+<body>
+  <img src="./images/dark mode.png" alt="" class="back" onclick="change()">
+   <div class="content">
+    <div class="p1">
+      <a href="../dashboard" onclick="change()"><h3>My Dashboard</h3></a>
+      <hr>
+      <a href="./dashboard.html"><h3>Pinned Candidates</h3></a>
+      <hr>
+      <h3>Top Recruited</h3>
+    </div>
+    <div class="p2">
+    <div class="slider" id="slider">
+        <div class="tinder">
+            <div class="tinder--status">
+              <i class="fa fa-remove"></i>
+              <i class="fa fa-heart"></i>
+            </div>
+          <h3 class="head">Trending Developer Profiles to recruit</h3>
+          <div class="pin">
+            <h5>Save It</h5>
+          </div>
+            <div class="tinder--cards">
+              <div class="tinder--card">
+                <img src="https://imgs.search.brave.com/XmInHHr-Xaqxewx2aDbssIKMJ1F_Uiy0l4ToLndiMIY/rs:fit:1560:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5x/dmpzeGVzNTI2Q0RK/TXlwakJRTnFnSGFD/USZwaWQ9QXBp">
+                <h3>John Smith</h3>
+                <p>Full Stack Developer</p>
+              </div>
+              <div class="tinder--card">
+                <img src="https://imgs.search.brave.com/1VdTat-RVD0UUyjatn5abhkedEz5P6LyrqFci_N7UFE/rs:fit:711:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC4z/cTFaTmlycHdva05p/Qkh3SU5fVE5RSGFF/OCZwaWQ9QXBp">
+                <h3>Greeg Williams</h3>
+                <p>Data Analyst</p>
+              </div>
+              <div class="tinder--card">
+                <img src="https://imgs.search.brave.com/Qd2uWjpGt-ylh65UPkpYalHllKJhnMRL_LTfEh2GOx4/rs:fit:711:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5S/eHVjZEJZUkRBeldX/SEM2SjVfUFVRSGFF/OCZwaWQ9QXBp">
+                <h3>Nitest Singh</h3>
+                <p>Cloud and Devops</p>
+              </div>
+              <div class="tinder--card">
+                <img src="https://placeimg.com/600/300/tech">
+                <h3>Harry Pattinson</h3>
+                <p>Business Operations</p>
+              </div>
+              <div class="tinder--card">
+                <img src="https://placeimg.com/600/300/arch">
+                <h3>Mohit Sharma</h3>
+                <p>Research Analyst</p>
+              </div>
+            </div>
+          
+            <div class="tinder--buttons">
+              <button id="nope"><i class="fa fa-remove"></i></button>
+              <button id="love"><i class="fa fa-heart"></i></button>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+</body>
+<script src="https://hammerjs.github.io/dist/hammer.js"></script>
+   <script src="./slider.js"></script>
+   <script>
+    function onchange(){
+      location.assign("./dashboard")
+    }
+   </script>
+</html>

@@ -18,7 +18,7 @@
         <input type="text" id="username" name="username" placeholder="xyz@gmail.com" />
         <label for="pwd"> <h2>Password</h2></label>
         <input type="password" id="pwd" name="pwd" placeholder="6 digit XXXXXX"/>
-        <button >Sign in to  your account</button>
+        <button onclick="set()">Sign in to  your account</button>
       </form>
     </div>
       <div class="ui">
@@ -26,4 +26,10 @@
       </div>
     </div>
 </body>
+<script>
+  function set(){
+    var value=document.getElementById("username").value;
+    sessionStorage.setItem("user",value)
+  }
+</script>
 </html>

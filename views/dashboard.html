@@ -1,55 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./dashboard.css">
-    <script src="https://kit.fontawesome.com/ad8d880fa2.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dashboard.css" />
+    
+    <script
+      src="https://kit.fontawesome.com/ad8d880fa2.js"
+      crossorigin="anonymous"
+    ></script>
+
     <title>Dashboard</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="main">
-            <img src="./images/i1.png" alt=""  class="i1">
-            <img src="./images/i2.png" alt=""  class="i2">
-            <img src="./images/i3.png" alt=""  class="i3">
-            <img src="./images/i4.png" alt=""  class="i4">
-            <img src="./images/search.png" alt="" class="search" onclick="change()">
-            <input type="text" placeholder="Enter Github name/Job drive" class="search-input" >
-        <div class="sidebar">
-            <img src="./images/dark mode.png" alt="" >
-            <ul>
-                <li><h3><a  onclick="viewDash()">Dashboard</a></h3></li>
-                <li><h3><a href="">Candidate</a></h3></li>
-                <li><h3><a href="">Vacancies</a></h3></li>
-                <li><h3><a href="">Interview</a></h3></li>
-            </ul>
+      <img src="./images/i1.png" alt="" class="i1" />
+      <img src="./images/i2.png" alt="" class="i2" />
+      <img src="./images/i3.png" alt="" class="i3" />
+      <img src="./images/i4.png" alt="" class="i4" />
+      <img
+        src="./images/search.png"
+        alt=""
+        class="search"
+        onclick="change()"
+        id="search"
+      />
+      <input
+        type="text"
+        placeholder="Enter Github name/Job drive"
+        class="search-input"
+        id="name"
+      />
+      <div class="sidebar" id="sidebar">
+        <img src="./images/dark mode.png" alt="" onclick="darkMode()"/>
+        <ul>
+          <li>
+            <h3><a onclick="viewDash()">Dashboard</a></h3>
+          </li>
+          <li>
+            <h3><a href="./candidates">Candidate</a></h3>
+          </li>
+          <li>
+            <h3><a>Vacancies</a></h3>
+          </li>
+          <li>
+            <h3><a>Interview</a></h3>
+          </li>
+        </ul>
+      </div>
+      <div class="options" id="options">
+        <div class="head">
+          <h2>Dashboard</h2>
+          <h2 id="date"></h2>
         </div>
-        <div class="options">
-            <h2>Dashboard</h2>
-            <div class="panel1" id="ch">
-                <div class="jobs">
-                    <h2>Active Jobs</h2>
-                    <hr>
-                </div>
-                <div class="new">
-                    <h2>New Applications</h2>
-                    <hr>
-                </div>
+
+        <div class="panel1" id="ch">
+          <div class="jobs" id="jobs">
+            <h2>Active Jobs</h2>
+            <hr />
+            <div class="jobList">
+              <h4>Junior Cloud Dev</h4>
+              <h4>Associate Developer</h4>
+              <h4 style="color:rgb(241, 117, 117);">Cloud and Devops Engineer</h4>
+              <h4>L2 Support Engineer</h4>
+            </div>
+          </div>
+          <div class="new" id="new">
+            <h2>New Applications</h2>
+            <hr />
+            <div class="appli">
+              <div class="c1">
+                <img src="https://imgs.search.brave.com/hYHMD5XyY95Fi7UJpmKRwRniXJG8XPmC-kX4nbFIYQc/rs:fit:711:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5Q/QzdDRTFHaTFmUVd4/SXFPWlhsQXpBSGFF/OCZwaWQ9QXBp" alt="">
+                <h3>John Neuman</h3>
+              </div>
+              <div class="c2">
+                <img src="https://imgs.search.brave.com/1VdTat-RVD0UUyjatn5abhkedEz5P6LyrqFci_N7UFE/rs:fit:711:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC4z/cTFaTmlycHdva05p/Qkh3SU5fVE5RSGFF/OCZwaWQ9QXBp" alt="">
+                <h3>Rahul Singh</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel2" id="panel2"></div>
+        <div class="meet" id="meetNow"></div>
+      </div>
+      <div class="panel3">
+        <div class="calender" id="calender">
+          <iframe
+            src="https://calendar.google.com/calendar/embed?src=mohit29code%40gmail.com&ctz=Asia%2FKolkata"
+            style="border: 0"
+            width="800"
+            height="600"
+            frameborder="0"
+            scrolling="no"
+          ></iframe>
+        </div>
+        <hr />
+        <div class="choose">
+          <img src="./images/add.png" alt="" onclick="newJob()" title="Open New Job "/>
+          <img src="./images/camera.png" alt="" onclick="meet()" title="Video Conferencing"/>
+
+          <img src="./images/mail.png" alt="" title="Messages"/>
+          <a href="./builder"><img src="./images/analytics.png" alt="" title="Build Customized Career Page form" /></a>
+        </div>
+        <hr />
+        <div class="more">
+          <h2>Tasks</h2>
+          <hr>
+          <h2>Contacts</h2>
+          <hr>
+          <h2>Appointments</h2>
+          <hr>
+          <h2>Reports</h2>
+        </div>
+      </div>
+    </div>
+    <div class="cardG"></div>
+  </body>
+  <script src="https://meet.jit.si/external_api.js"></script>
+  <script>
+    var key = document.getElementById("name");
+    var data = sessionStorage.getItem("user");
+    console.log(data);
+    var loc = location.host + "/r/" + data;
+    function meet(){
+      document.getElementById("ch").style.display = "none";
+      document.getElementById("panel2").style.display = "none";
+      var meet=document.getElementById("meetNow")
+      meet.style.display="block"
+    }
+    function newJob() {
+      location.assign("/r/" + data + ++jobs);
+    }
+    key.addEventListener("keyup", function (event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("search").click();
+      }
+    });
+    (function date() {
+      const d = new Date();
+      var date = d.getDate();
+      var month = d.getMonth();
+      var year = d.getFullYear();
+      console.log(date, month, year);
+      var dsec = document.getElementById("date");
+      dsec.innerHTML = `${date}/${month}/${year}`;
+    })();
+    function change() {
+      var jobs = document.getElementById("ch");
+      jobs.className = "git";
+      var profile = document.getElementById("panel2");
+      var search = document.getElementById("name");
+      document.getElementById("ch").style.display="none"
+      profile.style.display = "block";
+      const gitHub = "https://api.github.com/users/";
+      const username = search.value;
+      const getUser = async (username) => {
+        const response = await fetch(gitHub + username);
+        const data = await response.json();
+        console.log(data);
+        const panel2 = document.getElementById("panel2");
+        const card = `
+        <h2>Github Statistics</h2>
+          <hr/>
+        <div class="git-data">
+        <div>
+            <img src="${data.avatar_url}" alt="" class="avatar">
+        </div>
+        <div class="user-info">
+            <h2>${data.name}</h2>
+            <p>Bio: ${data.bio}</p>
+            <ul class="info">
+                <li><strong>Followers:</strong>${data.followers}</li>
+                <li><strong>Following:</strong>${data.followers}</li>
+                <li><strong>Repos:</strong>${data.public_repos}</li>
+            </ul>
+            <div id="repos">
+                <a href="" target="_blank"></a>
+                <a href="" target="_blank"></a>
+                <a href="" target="_blank"></a>
             </div>
         </div>
-        <div class="details"></div>
     </div>
-</body>
-<script>
-    
-    function change(){
-        var jobs=document.getElementById("ch");
-        jobs.className="git"
+        `;
+        panel2.innerHTML = card;
+      };
+      getUser(username);
     }
-    function viewDash(){
-        var jobs=document.getElementById("ch");
-        jobs.className="panel1"
+    function viewDash() {
+      var jobs = document.getElementById("ch");
+      jobs.className = "panel1";
+      document.getElementById("ch").style.display = "block";
+      document.getElementById("new").style.display = "none";
+      document.getElementById("jobs").style.width = "80%";
+      document.getElementById("meetNow").style.display="none";
+      var profile = document.getElementById("panel2");
+      profile.style.display = "none";
     }
-</script>
+    function slider() {
+      document.getElementById("ch").style.display = "none";
+      document.getElementById("panel1").style.display = "none";
+    }
+    var data = sessionStorage.getItem("user");
+    console.log(data);
+    var myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+    myHeaders.append("Authorization", "Basic " + btoa("mohit:mohit29#"));
+
+    var raw = JSON.stringify({
+      operation: "search_by_value",
+      schema: "users",
+      table: "recruiter",
+      search_attribute: "email",
+      search_value: data,
+      get_attributes: ["email", "password", "jobs"],
+    });
+
+    var requestOptions = {
+      method: "POST",
+      headers: myHeaders,
+      body: raw,
+      redirect: "follow",
+    };
+    var jobs = 0;
+    fetch("https://local-1-29sharma.harperdbcloud.com", requestOptions)
+      .then((response) => response.text())
+      .then((result) => {
+        const obj = JSON.parse(result);
+        console.log(obj[0]);
+      })
+      .catch((error) => console.log("error", error));
+    const domain = "meet.jit.si";
+    const options = {
+      roomName: "PickAnAppropriateMeetingNameHere",
+      width: 780,
+      height: 400,
+      parentNode: document.querySelector("#meetNow"),
+    };
+    const api = new JitsiMeetExternalAPI(domain, options);
+  </script>
+  
 </html>

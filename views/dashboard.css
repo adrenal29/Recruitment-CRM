@@ -6,6 +6,7 @@
 a{
     text-decoration: none;
     color: rgb(155, 155, 155);
+    cursor: pointer;
 }
 .main{
     display: flex;
@@ -64,6 +65,14 @@ a{
     margin: 3rem 2rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.head{
+    display: flex;
+}
+#date{
+    font-size: 1rem;
+    margin-top: 3.4rem;
+    margin-left: 30rem;
+}
 .search{
     position: absolute;
     top: 6rem;
@@ -85,7 +94,7 @@ a{
 }
 .panel1{
     display: flex;
-    margin-top: 5rem; 
+    margin-top: 5rem;
 }
 .jobs{
 background: white;
@@ -116,4 +125,116 @@ border-radius: 15px;
 }
 .git{
     display: none;
+}
+.panel2{
+    background: white;
+    width: 90%;
+    height: 50vh;
+    margin-left: 2rem;
+    border-radius: 15px; 
+    margin-top: 5rem;
+    display: none; 
+}
+.panel2 h2{
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    display: flex;
+}
+.panel2 hr{
+    border:0.002rem solid rgb(243, 242, 242);
+    margin-top: -2rem;   
+}
+.avatar{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    padding: 3.5rem;
+}
+.git-data{
+    display: flex;
+}
+.user-info p{
+    margin-top: -2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+}
+.user-info ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-left: -1rem;
+    margin-top: 1.2rem;
+}
+.user-info ul li{
+    margin-left: 3rem;
+}
+.panel3 iframe{
+    width: 100%;
+    height: 50vh;
+}
+.choose{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 1rem 1.6rem;
+}
+.choose img{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px rgb(63, 63, 63);
+}
+.meet{
+    display: none;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 20px;
+    border: 5px solid black;
+}
+.more{
+    display: flex;
+    flex-direction: column;
+    background: #36454f;
+}
+.more hr{
+    border:0.1px solid whitesmoke;
+}
+.more h2{
+    font-size: 1rem;
+    color: whitesmoke;
+    margin-left: 3rem;
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.jobList{
+    margin: 2rem 2rem;
+}
+.jobList h4{
+    margin: 1rem 2rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(34, 206, 160);
+}
+.appli img{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+}
+.appli{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+.appli div{
+    display: flex;
+}
+.appli div h3{
+    margin-top: 1.3rem;
+    margin-left: 1rem;
+    font-size: 1rem;
+}
+.darkMode{
+    background: #36454f;
 }
