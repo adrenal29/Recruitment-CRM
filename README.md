@@ -12,6 +12,10 @@ RecruiIt is a CRM for hiring managers to make developers search easy by integrat
 :+1:Recruitment statitics
 
 :+1:Customized drag and drop career page generator
+##Video Showcase
+[Watch the platform demo](https://www.canva.com/design/DAFKpCFL5Eg/ukk7P9iD2sTuOgXd1gHBxg/watch?utm_content=DAFKpCFL5Eg&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu)
+##Live Website
+[Check it Now](https://recruitit-crm.herokuapp.com/)
 ## Getting Started
 Clone Repo
 ```bash
