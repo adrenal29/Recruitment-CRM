@@ -55,7 +55,8 @@ app.get('/candidates',(req,res)=>{
 app.get('/login',(req,res)=>{
   res.sendFile(__dirname+"/views/login.html");
 })
-app.listen('4000',()=>{
+const port=process.env.PORT || 4000
+app.listen(port,()=>{
     console.log("server is listening on port 4000");
 })
 app.use(express.static(__dirname));
