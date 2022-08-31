@@ -17,11 +17,11 @@ a{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .options{
-    width: 60vw;
+    width: 60%;
     background: rgba(240, 240, 240, 0.644);
     height: 100vh;
 }
-.sidebar img{
+.darkMode{
     position: absolute;
     width: 8rem;
     top: 2rem ;
@@ -43,25 +43,15 @@ a{
 .sidebar ul li a:hover{
     color: black;
 }
-.i1,.i2,.i3,.i4{
-    position:absolute;
+.sidebar ul li{
+    display: flex;
 }
-.i3{
-    top: 35vh;
-    left:1rem;
+.sidebar ul li img{
+    height: 2rem;
+    width: 2rem;
+    margin-right:2% ;
 }
-.i1{
-    top:24vh;
-    left: 1rem;
-}
-.i2{
-    top: 45.5vh;
-    left: 1.3rem;
-}
-.i4{
-    top: 56.5vh;
-    left: 1rem;
-}.options h2{
+.options h2{ 
     margin: 3rem 2rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -237,4 +227,81 @@ border-radius: 15px;
 }
 .darkMode{
     background: #36454f;
+}
+@media only  screen and (max-width:720px){
+    .main{
+        flex-direction: column;
+    }
+    .sidebar{
+        display: none;
+    }
+    .options{
+        width: 100%;
+        height: 200%;
+    }
+    .panel1{
+        flex-direction: column;
+    }
+    .jobs{
+        width: 90vw;
+        margin-left: 5vw;
+        margin-top: -10vh;
+    }
+    .search{
+        left: 5%;
+    }
+    .search-input{
+    left: 20%;
+    width: 70%;
+    top:18%;
+    }
+    .new{
+        margin-top: 5vh;
+        width: 90vw;
+        margin-bottom: 10vh;
+    }
+    #date{
+        margin-left: 10%;
+    }
+    .more h2{
+        margin-left: 5%;
+    }
+    .panel2{
+        width: 80%;
+        height: 200%;
+    }
+    .git-data{
+        flex-direction: column;
+    }
+    .avatar{
+        height: 30%;
+        width: 30%;
+        margin-bottom: -30%;
+        margin-left: 10%;
+    }
+    .user-info{
+        flex-direction: column;
+        text-align: center;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+    }
+    .user-info{
+        margin-left: 10%;
+    }
+    .user-info ul li{
+        margin-left: -8%;
+        margin-top: 10%;
+    }
+    .user-info p{
+        margin-left: -15%;
+    }
+    .panel3 h2{
+        text-align: center;
+    }
+    .log{
+        display: none;
+    }
+    
 }

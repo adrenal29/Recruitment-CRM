@@ -12,17 +12,17 @@ display: flex;
 form{
     display: flex;
     flex-direction: column;
-    margin:-4rem 8rem;
+    margin:-10% 20%;
 }
 .form-part{
     width: 80vw;
 }
 .form-part h1{
-    margin: 6rem 8rem;
+    margin: 16% 19%;
 }
 form input{
     height: 2rem;
-    width:17rem;
+    width:75%;
     margin: 1rem 0rem;
     border-radius:5px ;
     outline: none;
@@ -48,7 +48,29 @@ form button{
     width: 100%;
 }
 .ui img{
-    position:fixed;
-    top:42vh;
-    left: 62vw;
+    padding-left:23%;
+    padding-top: 34%;
+}
+@media only screen and (max-width:720px) {
+    .ui {
+       display: none;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .form{
+        margin: 0% 0%;
+    }
+    .form-part{
+        width: 100vw;
+    }
+    form input{
+        width: 100%;
+    }
+    form button{
+        width: 110%;
+    }
+    .form-part h1{
+        text-align: center;
+    }
 }

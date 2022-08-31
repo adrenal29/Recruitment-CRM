@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./login.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./login.css" />
 
-    <title>Login </title>
-</head>
-<body>
+    <title>Login</title>
+  </head>
+  <body>
     <div class="main">
-    <div class="form-part">
+      <div class="form-part">
         <h1>Welcome to Refix</h1>
-    <form action="/dashboard" method="post">
-        
-        <label for="username"><h2> Email</h2></label>
-        <input type="text" id="username" name="username" placeholder="xyz@gmail.com" />
-        <label for="pwd"> <h2>Password</h2></label>
-        <input type="password" id="pwd" name="pwd" placeholder="6 digit XXXXXX"/>
-        <button onclick="set()">Sign in to  your account</button>
-      </form>
-    </div>
+        <form action="/dashboard" method="post">
+          <label for="username"><h2>Email</h2></label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="xyz@gmail.com"
+          />
+          <label for="pwd"> <h2>Password</h2></label>
+          <input
+            type="password"
+            id="pwd"
+            name="pwd"
+            placeholder="6 digit XXXXXX"
+          />
+          <button onclick="set()">Sign in to your account</button>
+          <a href="./dashboard.html" style="text-decoration: none;"><h4 style="color:rgb(245, 98, 79);margin:10% 12%;font-size:120%">Sign in as Guest account</h4></a>
+        </form>
+      </div>
       <div class="ui">
-<img src="./images/crm3.png" alt="">
+        <img src="./images/crm3.png" alt="" />
       </div>
     </div>
-</body>
-<script>
-  function set(){
-    var value=document.getElementById("username").value;
-    sessionStorage.setItem("user",value)
-  }
-</script>
+  </body>
+  <script>
+    function set() {
+      var value = document.getElementById("username").value;
+      sessionStorage.setItem("user", value);
+    }
+  </script>
 </html>

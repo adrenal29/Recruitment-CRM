@@ -4,21 +4,25 @@
 }
 body{
     font-family:Nunito Sans;
-    ;
+}
+.hamburger{
+    display: none;
+}
+.res-menu{
+    display: none;
 }
 .logo h2{
     font-size: 2rem;
-    padding-left: 3rem;
+    margin-left: 8vw;
 }
 nav{
     display: flex;
-    margin: 1.5rem 3rem;
-    
+    margin-top: 1rem;
 }
 ul{
     list-style: none;
     display: flex;
-    margin-left: 5vw;
+    margin-left: 10vw;
     margin-top: 0.3rem;
 }
 li{
@@ -27,12 +31,15 @@ padding: 0.5rem 0rem;
 cursor: pointer;
 font-weight: 600;
 }
-ul button{
+nav a{
+    margin-left: 20%;
+}
+.login,nav button{
    width: 9rem;
    height: 2.5rem;
-   margin-left: 25rem;
    border: none;
    background: #3b6df5;
+   margin-left: 20%;
    border-radius: 20px;
    color: white;
    font-size: 1rem;
@@ -40,30 +47,31 @@ ul button{
    cursor: pointer;
 }
 .hero-section{
-    margin-left: 33vw;
+    margin-left: 25%;
+    margin-right: 25%;
     margin-top: 15vh;
     font-family: Montserrat;
-    font-size: 1.5rem;
+    font-size: 150%;
 }
-.l2{
-    padding-left: 3rem;
-    margin-top: -1rem;
+.l1{
+    width: 100%;
+    text-align: center;
 }
 .hero-section p{
-    width: 60vw;
+    width: 100%;
     text-align: center;
-    margin-left: -10rem;
     font-weight: 500;
     margin-top: 1rem;
-    font-size: 1.5rem;
+    font-size: 100%;
     line-height: 2rem;
+    
 }
 .sb-btn{
-    height: 3rem;
-    width: 15rem;
+    height: 7vh;
+    width: 35%;
     border: none;
-    margin-top:2rem;
-    margin-left: 42.5vw;
+    margin-top:5%;
+    margin-left: 32%;
     border-radius: 30px;
     font-size: 1.1rem;
     background: #3b6df5;
@@ -73,15 +81,15 @@ ul button{
 }
 .arrow{
     position: absolute;
-    left:65vw;
+    left:65%;
     top:65vh;
     height: 9rem;
 }
 .slack{
     position: absolute;
-    left: 7vw;
-    top:20vh;
-    width: 15vw;
+    left: 8%;
+    top:20%;
+    width: 17%;
 }
 .msg{
     position: absolute;
@@ -99,12 +107,11 @@ ul button{
 .crm{
     height: 80vh;
     background: rgba(245, 245, 245, 0.747);
-    margin-top: 17rem;
+    margin-top: 45vh;
      
 }
 .crm h3{
-    padding-top: 23rem;
-    padding-left: 3rem;
+    padding-top:65vh;
     text-align: center;
     font-size: 1.5rem;
     line-height: 2rem;
@@ -112,6 +119,7 @@ ul button{
 }
 .crm-img{
     position: absolute;
+    /* display: none; */
     left: 17rem;
     height: 30rem;
     width: 60vw;
@@ -120,47 +128,52 @@ ul button{
     border-radius: 20px;
 }
 .features{
-    margin:2rem 4rem;
+    margin:2rem 10vw;
 }
 .features h1{
-    margin-left: 3rem;
     margin-top: 4rem;
     line-height: 3rem;
-    font-size: 2.3rem ;
+    font-size: 250% ;
+    margin-left: 10%;
 }
 .feature1{
     display: flex;
     justify-content: space-between;
 }
-.feature1 .content{
-    padding:0rem 5rem;
+/* .features-content{
+    padding-left: 10%;
+} */
+.content{
+    margin-left: 15vw;
 }
 .content h1{
     font-size: 1.5rem;
+
 }
 .content p{
-    padding-left: 3rem;
+    padding-left: 10%;
     font-size: 1.2rem;
-    width: 25rem;
+    width: 70%;
     text-align: left;
     line-height: 2rem;
     color: rgba(139, 137, 137, 0.952);
 }
 .feature1 img{
-    padding-left: 1rem;
+   margin-left: -5vw;
 }
 .feature-arrow{
     position: absolute;
     left:36vw; 
     top:82rem;
     height: 8rem;
+    display: none;
 }
 .content button{
     height: 2rem;
     width: 8rem;
     border: none;
     margin-top:1rem;
-    margin-left: 2.5rem;
+    margin-left: 10%;
     border-radius: 20px;
     font-size: 0.8rem;
     background: #3b6df5;
@@ -169,12 +182,12 @@ ul button{
     
 }
 .metrics{
-margin-top:5rem ;
+margin-top:5% ;
 display: flex;
 justify-content: space-around;
 }
 .one,.two{
-padding-top: 8rem;
+padding-top: 10%;
 }
 .metrics h4{
     width: 12rem;
@@ -200,10 +213,11 @@ height: 50vh;
 }
 .subscribe button{
     height: 2.5rem;
-    width: 15rem;
+    width: 20%;
     border: none;
-    margin-top:1.5rem;
-    margin-left: 2.5rem;
+    /* margin-top:1.5rem;
+    margin-left: 25vw; */
+    margin-top: 2%;
     border-radius: 20px;
     font-size: 1rem;
     background: #3b6df5;
@@ -225,3 +239,196 @@ hr{
     color:rgba(139, 137, 137, 0.952);
     line-height: 2rem;
 }
+.feature-head{
+    margin-left: 10vw;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    
+}
+.nav-links li{
+    margin: 0 30px;
+    
+}
+.nav-links li a{
+    color: whitesmoke;
+}
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px ;
+    cursor: pointer;
+    display: none;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    display: none;
+}
+.nav-links li{
+    margin: 0 30px;
+    
+}
+.nav-links li a{
+    color: whitesmoke;
+}
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px ;
+    cursor: pointer;
+    display: none;
+}
+@media only screen and (max-width: 720px) {
+    .nav-links{
+        display: block;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: rgb(58, 47, 47);
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .nav-links li{
+        margin: 30px auto;
+    }
+    
+    .menu-btn{
+        display: block;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    .hero-section{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .hero-section p{
+        font-size: 80%;
+    }
+    .l1{
+        font-size: 150%;
+    }
+    .sb-btn{
+        height: 2.5rem;
+        width: 60vw;
+        font-size: 1rem;
+        margin-left:15vw;
+    }
+    .crm h3{
+        font-size: 120%;
+        padding-top: 35%;
+    }
+    .feature-head{
+        margin:5vh 5vw ;
+        font-size: 180%;
+        text-align: center;
+    }
+    .feature1{
+        flex-direction: column;
+    }
+    .content{
+        margin: 3vh 3vw;
+        text-align: center;
+    }
+    .content p{
+        text-align: center;
+        width: 100%;
+        margin-left:-10%;
+    }
+    .metrics{
+        flex-direction: column;
+        
+    }
+    .one,.two{
+        margin-left: 15vw;
+        text-align: center;
+    }
+    .one h1,.two h1{
+        text-align: left;
+        margin-left: 30vw;
+    }
+    .one h4,.two h4{
+        margin-left: 10vw;
+    }
+    .three img{
+        margin-left: 20vw;
+        width: 70%;
+    }
+    .subscribe img{
+        margin-left: 10vw;
+        width: 90vw;
+        height: 40vh;
+    }
+    .subscribe button{
+        width: 65vw;
+        margin-left: 18vw;
+        margin-top: 5vh;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-detail{
+        display: flex;
+        flex-direction: column;
+    }
+    .f1,.f2{
+        padding-left: 0vw;
+        margin-left: 18vw;
+    }
+    .slack,.msg,.slack2,.arrow{
+        display: none;
+    }
+    .crm-img{
+        height: 40%;
+        width: 90vw;
+        margin-left:-80vw;
+        margin-top: 10%;
+    }
+    .crm{
+        height: 40vh;
+    }
+    .hamburger{
+        display: block;
+        position: absolute;
+        height: 5%;
+        width: 11%;
+        top:5%;
+        left:85%;
+    }
+    .res-menu{
+       display: none;
+    }
+    .res-menu ul{
+        display: flex;
+        flex-direction: column;
+        padding-top: 20%;
+        margin-left:30% ;
+    }
+    .res-menu ul li{
+        margin-top: 15%;
+    }
+    nav{
+        display: none;
+    }
+    .mobile-menu{
+        position:absolute;
+        display: flex;
+        top:0%;
+        left: 10%;
+        background: white;
+        height: 100vh;
+        width: 80%;
+        text-align: center;
+     }
+     .login{
+       position: absolute;
+       top: 60%;
+       left: 5vw;
+     }
+  }

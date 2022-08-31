@@ -15,10 +15,10 @@
   </head>
   <body>
     <div class="main">
-      <img src="./images/i1.png" alt="" class="i1" />
+      <!-- <img src="./images/i1.png" alt="" class="i1" />
       <img src="./images/i2.png" alt="" class="i2" />
       <img src="./images/i3.png" alt="" class="i3" />
-      <img src="./images/i4.png" alt="" class="i4" />
+      <img src="./images/i4.png" alt="" class="i4" /> -->
       <img
         src="./images/search.png"
         alt=""
@@ -33,21 +33,26 @@
         id="name"
       />
       <div class="sidebar" id="sidebar">
-        <img src="./images/dark mode.png" alt="" onclick="darkMode()"/>
+        <img src="./images/dark mode.png" alt="" class="darkMode" onclick="darkMode()"/>
         <ul>
           <li>
+            <img src="./images/i1.png" alt="" class="i1">
             <h3><a onclick="viewDash()">Dashboard</a></h3>
           </li>
           <li>
+            <img src="./images/i2.png" alt="" class="i2">
             <h3><a href="./candidates">Candidate</a></h3>
           </li>
           <li>
-            <h3><a>Vacancies</a></h3>
+            <img src="./images/i3.png" alt="" class="i3">
+            <h3><a onclick="viewDash()">Vacancies</a></h3>
           </li>
           <li>
-            <h3><a>Interview</a></h3>
+            <img src="./images/i4.png" alt="" class="i4">
+            <h3 onclick="meet()"><a>Interview</a></h3>
           </li>
         </ul>
+      
       </div>
       <div class="options" id="options">
         <div class="head">
@@ -114,6 +119,7 @@
           <h2>Reports</h2>
         </div>
       </div>
+      <a href="./" class="log"><h6 style="font-size:120%;position: absolute;top:90%;left:88% ;" >LOGOUT</h6></a>
     </div>
     <div class="cardG"></div>
   </body>

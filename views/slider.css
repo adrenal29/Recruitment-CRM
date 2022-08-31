@@ -198,3 +198,24 @@
     width: 6rem;
     left: 90vw;
   }
+  @media only  screen and (max-width:720px) {
+    .p1{
+      display: none;
+    }
+      .p2 {
+        margin-top: 10vh;
+      }
+      .p2 h3{
+        display: none;
+      }
+      .back{
+        display: none;
+      }
+      .tinder--card{
+        width: 80%;
+      }
+      .tinder--cards{
+        margin-left: 10%;
+      }
+    }
+  }

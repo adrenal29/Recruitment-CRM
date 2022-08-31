@@ -8,6 +8,17 @@
     <title>ReFix</title>
 </head>
 <body>
+    <div class="res-menu">
+        <ul>
+            <li>HOME</li>
+            <li>FEATURES</li>
+            <li>PRICING</li>
+            <li>ABOUT US</li>
+           
+        </ul>
+        <a href="./login.html" style="text-decoration: none;color: white;"><button class="login"><b>LOGIN </b></button></a>
+    </div>
+    <img src="./images/AnyConv.com__th__9_-removebg-preview.png" class="hamburger" alt="">
     <nav>
         <!-- <div class="logo-back"></div> -->
         <div class="logo"><h2>RecruitIt</h2></div>
@@ -17,27 +28,31 @@
             <li>FEATURES</li>
             <li>PRICING</li>
             <li>ABOUT US</li>
-            <button><b><a href="./login.html" style="text-decoration: none;color: white;">Contact Us</a> </b></button>
+           
         </ul>
+        <a href="./login.html" style="text-decoration: none;color: white;"><button><b>LOGIN </b></button></a>
     </nav>
     <div class="hero-section">
-        <h1 class="l1">Recruit more <span style="color: #28a57f;">effectively</span></h1>
-        <br>
-        <h1 class="l2">  and hasslefree now</h1>
-        <p>RecruitIt helps reruiters to source developers easily & post job ,conduct interview and increase recruiter's productivity  </p>
-    </div>
-    <a href="./login"><button class="sb-btn">Get started for free</button></a>
-    <img src="./images/arrow.png" alt="" class="arrow">
+        <img src="./images/arrow.png" alt="" class="arrow">
     <img src="./images/slack.png" alt="" class="slack">
     <img src="./images/slack.png" alt="" class="slack2">
     <img src="./images/msg.png" alt="" class="msg" >
     <img src="./images/crm3.png" alt="" class="crm-img">
+        <h1 class="l1">Recruit more <span style="color: #28a57f;">effectively</span> <br>and hasslefree now</h1>
+        <p>RecruitIt helps reruiters to source developers easily & post job ,conduct interview and increase recruiter's productivity  </p>
+        <a href="./login"><button class="sb-btn">Get started for free</button></a>
+    </div>
+   
+    
     <div class="crm">
         <h3>Trusted By Top Recruiters <br>Add your organiztion name in the list</h3>
     </div>
+    <h1 class="feature-head" style="margin-top: 5vh;">Keep your <span style="color: #28a57f;">recruitment</span> <br>effective</h1>
     <div class="features">
+       
         <img src="./images/arrow.png" alt="" class="feature-arrow">
-        <h1 class="l1">Keep your <span style="color: #28a57f;">recruitment</span> <br>effective</h1>
+        <div class="features-content">
+        
         <div class="feature1">
             <img src="./images/feature1.png" alt="">
             <div class="content">
@@ -46,6 +61,7 @@
                 <button>Explore Now</button>
             </div>
         </div>
+    </div>
     </div>
     <div class="metrics">
         <div class="one">
@@ -76,11 +92,18 @@
         
     </footer>
     <hr>
-        <ul style="color:rgba(139, 137, 137, 0.952) ;">
+        <ul style="color:rgba(139, 137, 137, 0.952) ;" class="footer-detail">
             <li>Copyright 2022</li>
             <li>Privacy Policy</li>
             <li>Terms of Use</li>
             <li>Site Map</li>
         </ul>
 </body>
+<script>
+    const menuBtn=document.querySelector('.hamburger');
+const navLinks=document.querySelector('.res-menu')
+menuBtn.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+})
+</script>
 </html>
