@@ -1,23 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <form action="/add" method="post">
-      <h2>Login Now</h2>
-      <label for="username">Enter Username</label>
-      <input type="text" id="username" name="username" />
-      <label for="pwd">Enter Password</label>
-      <input type="password" id="pwd" name="pwd" />
-      <button >SUBMIT</button>
-    </form>
-  </body>
-  <script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./home.css">
+    <title>ReFix</title>
+</head>
+<body>
+    <div class="res-menu">
+        <ul>
+            <li>HOME</li>
+            <li>FEATURES</li>
+            <li>PRICING</li>
+            <li>ABOUT US</li>
+           
+        </ul>
+        <a href="./login.html" style="text-decoration: none;color: white;"><button class="login"><b>LOGIN </b></button></a>
+    </div>
+    <img src="./images/AnyConv.com__th__9_-removebg-preview.png" class="hamburger" alt="">
+    <nav>
+        <!-- <div class="logo-back"></div> -->
+        <div class="logo"><h2>RecruitIt</h2></div>
+        
+        <ul>
+            <li>HOME</li>
+            <li>FEATURES</li>
+            <li>PRICING</li>
+            <li>ABOUT US</li>
+           
+        </ul>
+        <a href="./login.html" style="text-decoration: none;color: white;"><button><b>LOGIN </b></button></a>
+    </nav>
+    <div class="hero-section">
+        <img src="./images/arrow.png" alt="" class="arrow">
+    <img src="./images/slack.png" alt="" class="slack">
+    <img src="./images/slack.png" alt="" class="slack2">
+    <img src="./images/msg.png" alt="" class="msg" >
+    <img src="./images/crm3.png" alt="" class="crm-img">
+        <h1 class="l1">Recruit more <span style="color: #28a57f;">effectively</span> <br>and hasslefree now</h1>
+        <p>RecruitIt helps reruiters to source developers easily & post job ,conduct interview and increase recruiter's productivity  </p>
+        <a href="./login"><button class="sb-btn">Get started for free</button></a>
+    </div>
+   
     
-  </script>
+    <div class="crm">
+        <h3>Trusted By Top Recruiters <br>Add your organiztion name in the list</h3>
+    </div>
+    <h1 class="feature-head" style="margin-top: 5vh;">Keep your <span style="color: #28a57f;">recruitment</span> <br>effective</h1>
+    <div class="features">
+       
+        <img src="./images/arrow.png" alt="" class="feature-arrow">
+        <div class="features-content">
+        
+        <div class="feature1">
+            <img src="./images/feature1.png" alt="">
+            <div class="content">
+                <h1>Minimize searching time</h1>
+                <p>With RecruitIt searching developer gets easy as it provides instant github analysis and resume shortlisting</p>
+                <button>Explore Now</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="metrics">
+        <div class="one">
+            <h1>50%</h1>
+            <h4>More efficient candidate search for recruitment</h4>
+        </div>
+        <div class="two">
+            <h1>30%</h1>
+            <h4>Extra time generated within your working hours</h4>
+        </div>
+        <div class="three">
+            <img src="./images/metrics.png" alt="">
+        </div>
+    </div>
+    <div class="subscribe">
+        <img src="./images/last.png" alt="">
+        <h1><span style="color:#28a57f">Search , Contact , Hire</span>  <br>Repeat</h1>
+        <a href="./login"><button>Get Started with RecruitIt</button></a>
+    </div>
+    <hr>
+    <footer>
+        <div class="f1">
+            <h4>mohit29code@gmail,.com <br>+918960182905 <br> Lucknow,India</h4>
+        </div>
+        <div class="f2">
+            <h4>Blog <br> Support</h4>
+        </div>
+        
+    </footer>
+    <hr>
+        <ul style="color:rgba(139, 137, 137, 0.952) ;" class="footer-detail">
+            <li>Copyright 2022</li>
+            <li>Privacy Policy</li>
+            <li>Terms of Use</li>
+            <li>Site Map</li>
+        </ul>
+</body>
+<script>
+    const menuBtn=document.querySelector('.hamburger');
+const navLinks=document.querySelector('.res-menu')
+menuBtn.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+})
+</script>
 </html>

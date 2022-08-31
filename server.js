@@ -11,7 +11,7 @@ app.get('/home',(req,res)=>{
     res.sendFile(__dirname+"/index.html");
 })
 app.get('/',(req,res)=>{
-  res.sendFile(__dirname+"/views/home.html");
+  res.sendFile(__dirname+"/index.html");
 })
 app.get('/builder',(req,res)=>{
   res.sendFile(__dirname+"/views/builder.html");
